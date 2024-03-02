@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Alumni nexus</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="first.css">-->
+    <style>
+        body {
+            margin-left: 0;
+            margin-right: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .naving {
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            margin-top: 25px;
+            background-color: #909063;
+            height: 60px;
+
+
+        }
+
+        .navbar nav {
+            margin-left: 3cm;
+            padding-top: 18px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .navbar nav:hover {
+            background-color: white;
+            color: black;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+        }
+
+        .photo {
+            position: relative;
+            text-align: center;
+        }
+
+        .photo img {
+            width: 100%;
+            /* Adjust as needed */
+            height: 10cm;
+            /* Maintain aspect ratio */
+            display: block;
+        }
+
+        .photo::before {
+            content: 'ALUMNI NEXUS';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 80px;
+            font-weight: bold;
+            color: #e8dddd;
+            z-index: 0;
+            width: 10cm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            /* Add background color for better readability */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            /* Center align the content */
+        }
+
+        header img {
+            width: 200px;
+            /* Adjust the width of the image */
+        }
+
+        .hero {
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .careers {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .career {
+            margin-bottom: 30px;
+        }
+
+        .career h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .what {
+            margin: 20px;
+            font-size: 25px;
+            background-color: #f5f5f5;
+            line-height: 40px;
+        }
+
+        .what h2 {
+            color: rgb(200 118 118);
+            text-align: center;
+        }
+
+        .what p {
+            margin: 20px;
+            font-size: 25px;
+            background-color: #f5f5f5;
+            line-height: 40px;
+        }
+
+        .why {
+            margin: 20px;
+            font-size: 25px;
+            background-color: #f5f5f5;
+            line-height: 40px;
+        }
+
+        .why h2 {
+            color: rgb(200 118 118);
+            text-align: center;
+        }
+
+        .why p {
+            margin: 20px;
+            font-size: 25px;
+            background-color: #f5f5f5;
+            line-height: 40px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: black;
+            font-weight: 500;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            /* Important for vertical align on mobile phones */
+            margin: 0;
+            /* Important for vertical align on mobile phones */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .od {
+            margin: 20px;
+            font-size: 25px;
+            background-color: #f5f5f5;
+            line-height: 40px;
+        }
+
+        .od h1 {
+            text-align: center;
+            margin: 20px;
+            color: rgb(200 118 118);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1 id="home"> Alumni Nexus - Simplyfying alumni management</h1>
+        </div>
+    </header>
+
+    <div class="first">
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Profile <i class="fa fa-caret-down">⌄</i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="profile.html">View progile</a>
+                    <a href="profile.html">Edit profile</a>
+                    <a href="login.html">Sign out</a>
+                </div>
+            </div>
+            <nav class="naving"><a href="#home"> ALUMNI HOME</a></nav>
+            <nav class="naving"> <a href="anet.html">CARRIER NETWORK</a></nav>
+            <nav class="naving"><a href="alpost.html"> POST</a></nav>
+            <nav class="naving"><a href="alnot.html"> NOTIFICATION</a> </nav>
+            <nav class="naving"><a href="aljob.html"> JOBS</a> </nav>
+            <nav class="naving"><a href="alres.html"> RESOURCES</a> </nav>
+        </div>
+        <div class="photo">
+            <img src="first.jpg" alt="">
+        </div>
+    </div>
+    <div class="od">
+        <h1>Objectives</h1>
+        <ul class="objectives">
+            <li>To foster continuous engagement of the alumni with their alma mater.</li>
+            <li>To promote a goodwill and sense of pride to both alumni and Alma Mater. </li>
+            <li>The alumni contribute immensely to the development of the student community by providing them industry
+                interface and guiding and empowering them through regular interactions in the form of lecture series,
+                mock interviews, soft skill training, internships, placements etc</li>
+            <li>To strengthen a lifelong relationship between the university and its alumni through various cultural and
+                social Initiatives.</li>
+            <li>To establish an external support from alumni in course designing on the basis of scope and market trend,
+                promoting entrepreneurship, industrial research, training program for students etc.</li>
+            <li>To encourage and build the sense of belongingness among the members of the alumni.</li>
+            <li>To Promote and encourage academic; professional, and social activities that concern Alumni. </li>
+        </ul>
+    </div>
+    <br>
+    <div class="what">
+        <h2> => What is Alumni management system</h2>
+        <p> -> An alumni management system is a software platform designed to facilitate communication and engagement
+            among
+            alumni of an institution. It typically includes features such as alumni directory, event management,
+            fundraising tools, and job postings. These systems help organizations maintain connections with former
+            students, fostering a sense of community and support. Alumni can update their contact information, connect
+            with fellow graduates, and stay informed about upcoming events or opportunities. Institutions use these
+            systems to track alumni involvement, gather feedback, and measure the impact of alumni relations efforts.
+            Advanced systems may integrate with social media platforms and offer analytics to optimize engagement
+            strategies. Overall, alumni management systems serve as a vital tool for nurturing relationships between
+            alumni and their alma mater.</p>
+
+    </div>
+    <div class="why">
+        <h2> => Why use Alumni management System</h2>
+        <p> 1. An alumni management system helps organizations stay connected with their former students or members.<br>
+            2. It facilitates communication and networking opportunities among alumni, fostering a sense of community.<br>
+            3. The system can streamline event planning and coordination, making it easier to organize reunions,
+            networking events, and fundraising activities.<br>
+            4. Alumni can update their contact information and professional details, keeping the database current and
+            accurate.<br>
+            5. It allows for targeted communication, enabling organizations to send relevant updates, newsletters, and
+            job opportunities to specific groups of alumni.<br>
+            6. The system can track alumni engagement metrics, providing valuable insights into which initiatives are
+            most effective at keeping alumni involved.<br>
+            7. Alumni can use the platform to mentor current students or offer career advice, fostering a sense of
+            mentorship and support within the community.<br>
+            8. It serves as a valuable fundraising tool, allowing organizations to solicit donations and track donor
+            contributions.<br>
+            9. The system can help identify potential volunteers or leaders within the alumni community, facilitating
+            recruitment for various initiatives or committees.<br>
+            10. Overall, an alumni management system helps organizations maintain strong relationships with their
+            alumni, benefiting both the institution and its graduates in the long run.<br>
+        </p>
+
+    </div>
+    <section class="hero">
+        <div class="container">
+            <h2>Career Guidance in Engineering</h2>
+            <p>Explore various career paths in the field of engineering.</p>
+        </div>
+    </section>
+
+    <section class="careers" id="carrirnetwork">
+        <div class="container">
+            <h2>Engineering Career Paths :</h2><br><br>
+            <div class="career">
+                <h3>Software Engineering</h3>
+                <p>Software engineers design, develop, and maintain software systems.</p><br>
+                <nav> <b>Language learning:</b> <br>
+                    JavaScript, Python, Java, C#, C++, Swift, Kotlin, PHP, Ruby, Go (Golang), SQL, R, TypeScript,
+                    Perl.
+                    <br><br>
+                    <b>Future Technology:</b> <br>
+                    Artificial Intelligence (AI), Internet of Things (IoT), 5G Technology, Edge Computing,
+                    Blockchain,
+                    Quantum Computing, Biotechnology, Renewable Energy, Augmented Reality (AR), Virtual Reality
+                    (VR),
+                    Cybersecurity.
+                </nav>
+            </div>
+            <div class="career">
+                <h3>Mechanical Engineering</h3>
+                <p>Mechanical engineers design, develop, and test mechanical devices.</p><br>
+                <nav> Automotive Engineering, Aerospace Engineering, Energy Systems Engineering, Manufacturing
+                    Engineering, Mechatronics Engineering, HVAC Engineering, Material Science and Engineering,
+                    Product
+                    Design and Development, Research and Development (R&D), Consulting and Project Management,
+                    Biomedical
+                    Engineering, Defense and Security Engineering.
+                </nav>
+            </div>
+            <div class="career">
+                <h3>Civil Engineering</h3>
+                <p>Civil engineers design and oversee the construction of infrastructure projects.</p><br>
+                <nav>
+                    Structural Engineering, Transportation Engineering, Geotechnical Engineering, Environmental
+                    Engineering, Water Resources Engineering, Construction Management, Urban Planning and
+                    Development,
+                    Coastal Engineering, Surveying and Mapping, Land Development Engineering.
+                </nav>
+            </div>
+
+            <div class="career">
+                <h3>Electrical and Communication Engineering</h3>
+                <p>Electronics and Communication Engineering involves designing, developing, and maintaining
+                    electronic
+                    devices and communication systems for various industries.</p><br>
+                <nav>
+                    Analog Electronics, Digital Electronics, Microelectronics, VLSI Design (Very Large Scale
+                    Integration),
+                    Embedded Systems, Wireless Communication, Optical Communication, Networking, RF (Radio
+                    Frequency)
+                    Engineering, Antenna Design.
+                </nav>
+            </div>
+
+            <div class="career">
+                <h3>Electrical Engineering</h3>
+                <p>Electrical engineering involves designing, developing, and maintaining electronic devices and
+                    communication systems for various industries.</p><br>
+                <nav>
+                    Power Systems Engineering, Electronics Engineering, Control Systems Engineering, Signal
+                    Processing,
+                    Telecommunications Engineering, Integrated Circuit Design, Renewable Energy Systems, Robotics
+                    and
+                    Automation.
+                </nav>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Alumni Nexus. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
