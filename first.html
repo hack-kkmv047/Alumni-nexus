@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alumni nexus</title>
+    <title>Home - Alumni nexus</title>
+    <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="first.css">-->
     <style>
         body {
@@ -13,6 +14,15 @@
             font-family: Arial, Helvetica, sans-serif;
 
 
+        }
+
+        a{
+            text-decoration: none;
+            color:black;
+        }
+
+        .naving{
+            text-decoration: none;
         }
 
         .navbar {
@@ -149,6 +159,57 @@
         footer p {
             margin: 0;
         }
+
+        .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: 500;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
     </style>
 </head>
 
@@ -156,19 +217,27 @@
 
     <header>
         <div class="container">
-            <h1> Alumni Nexus </h1>
+            <h1> Alumni Nexus - Simplyfying alumni management</h1>
         </div>
     </header>
 
     <div class="first">
         <div class="navbar">
-            <nav> PROFILE▼ </nav>
-            <nav> ALUMNI HOME</nav>
-            <nav> CARRIER NETWORK</nav>
-            <nav> POST</nav>
-            <nav> NOTIFICATION </nav>
-            <nav> JOBS </nav>
-            <nav> RESOURCES </nav>
+            <div class="dropdown">
+                <button class="dropbtn">Meet                  <i class="fa fa-caret-down">⌄</i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="profile.html">View progile</a>
+                  <a href="login.html">Sign out</a>
+                  <a href="#"></a>
+                </div>
+              </div>
+            <nav class="naving"><a href="#"> ALUMNI HOME</a></nav>
+            <nav class="naving"> <a href="#carrirnetwork">CARRIER NETWORK</a></nav>
+            <nav class="naving"><a href="#"> POST</a></nav>
+            <nav class="naving"><a href="#"> NOTIFICATION</a> </nav>
+            <nav class="naving"><a href="#"> JOBS</a> </nav>
+            <nav class="naving"><a href="#"> RESOURCES</a> </nav>
         </div>
         <div class="photo">
             <img src="first.jpg" alt="">
@@ -181,7 +250,7 @@
         </div>
     </section>
 
-    <section class="careers" id="# CARRIER NETWORK">
+    <section class="careers" id="carrirnetwork">
         <div class="container">
             <h2>Engineering Career Paths :</h2><br><br>
             <div class="career">
