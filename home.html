@@ -42,7 +42,7 @@
         }
 
         .navbar nav:hover {
-            background-color: white;
+            opacity: 50%;
             color: black;
             margin-top: 5px;
             margin-bottom: 5px;
@@ -263,6 +263,16 @@
             margin: 20px;
             color: rgb(200 118 118);
         }
+        #profilemain{
+            font-size: 20px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+        .dropbtn{
+            width: 50px;
+            
+        }
     </style>
 </head>
 
@@ -277,7 +287,7 @@
     <div class="first">
         <div class="navbar">
             <div class="dropdown">
-                <button class="dropbtn">Profile <i class="fa fa-caret-down">⌄</i>
+                <button class="dropbtn" id="profilemain">Profile <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
                     <a href="profile.html">View progile</a>
@@ -291,6 +301,7 @@
             <nav class="naving"><a href="alnot.html"> NOTIFICATION</a> </nav>
             <nav class="naving"><a href="aljob.html"> JOBS</a> </nav>
             <nav class="naving"><a href="alres.html"> RESOURCES</a> </nav>
+            <nav class="naving"><a href="chat.html">CHAT WITH ALUMNI</a> </nav>
         </div>
         <div class="photo">
             <img src="first.jpg" alt="">
